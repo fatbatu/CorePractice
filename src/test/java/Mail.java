@@ -11,7 +11,7 @@ public class Mail {
         final String username = "your_email@gmail.com";
         final String password = "your_password";
 
-        // Gmail SMTP server settings
+
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
         prop.put("mail.smtp.port", "587");
@@ -41,7 +41,7 @@ public class Mail {
     }
 
     public static void main(String[] args) {
-        // Replace these values with the actual recipient email address, subject, and body
+
         String to = "recipient_email@example.com";
         String subject = "Test Subject";
         String body = "This is a test email";
