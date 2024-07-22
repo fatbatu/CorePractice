@@ -16,7 +16,7 @@ public class AgifyAPI {
         String name = jsonResponse.getString("name");
         int age = jsonResponse.getInt("age");
 
-        // Sonucu yazdırma
+
         System.out.println("Name: " + name);
         System.out.println("Predicted Age: " + age);
 
