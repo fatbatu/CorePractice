@@ -9,6 +9,7 @@ public class Logger {
     private static final String logfile = "application.log";
 
     public static void log(String message) {
+        // try-with-resources modeli
         try (PrintWriter out = new PrintWriter(new FileWriter(logfile, true))) {
             LocalDateTime now = LocalDateTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
