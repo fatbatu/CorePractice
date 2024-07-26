@@ -18,11 +18,13 @@ public class Mail {
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true");
 
-        Session session = Session.getInstance(prop, new javax.mail.Authenticator() {
+        Session session = Session.getInstance(prop,
+                new javax.mail.Authenticator() { // Anonymous Classes
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(username, password);
             }
-        });
+        }
+        );
 
         try {
             Message message = new MimeMessage(session);
