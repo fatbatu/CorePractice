@@ -7,9 +7,10 @@ public class TwoStringAnagram {
     public static void main(String[] args) {
         String string1= "";
         String string2= "";
-        System.out.println(twostringanagram(string1,string2));
+     //   System.out.println(twostringanagram(string1,string2));
     }
 
+    /*
 
     public static boolean twostringanagram(String s, String ss){
 
@@ -19,10 +20,13 @@ public class TwoStringAnagram {
         String[] list1= list1= s.split("");
         String[] list2= list1= s.split("");
 
+        int flag=0;
         for (int i = 0; i <list1.length ; i++) {
-            if (ss.contains(list1(i)))
+           if (ss.contains(list1[i]))
                     }
 
         return result;
     }
+
+     */
 }
